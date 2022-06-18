@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-center mt-5">
       <div class="input-group d-flex align-items-center" id="searchGroup">
         <input type="search" class="form-control text-center" placeholder="Search for an artist..." id="searchInput" v-model="searchedTerm" @change="searchforArtist()" />
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search" @click="searchforArtist()"></i>
       </div>
     </div>
 
@@ -178,6 +178,10 @@ export default {
 a{
   text-decoration: none;
   color: black;
+}
+
+.fa{
+  cursor: pointer;
 }
 
 </style>
